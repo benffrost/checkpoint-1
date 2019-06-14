@@ -12,20 +12,20 @@
   <title>Document</title>
 </head>
 
-<body>
+<body id="main">
   <span>Name:<span id="name">--</span></span><br \>
   <span>Health:<span id="health">--</span></span><br \>
   <span>Hits:<span id="hits">--</span></span><br \>
 
   <img src="//placehold.it/200x200" alt="target" />
-  <button onClick="slap()">Slap</button>
-  <button onClick="punch()">Punch</button>
-  <button onClick="kick()">Kick</button>
+  <button onClick="app.controllers.gameController.attackTarget('slap')">Slap</button>
+  <button onClick="app.controllers.gameController.attackTarget('punch')">Punch</button>
+  <button onClick="app.controllers.gameController.attackTarget('kick')">Kick</button>
   <div id="items">
     <button onclick="giveItem('cleats')">cleats</button>
     <button onclick="giveItem('boomerang')">boomerang</button>
     <button onclick="giveItem('sword')">sword</button></div>
-  <script src="game.js"></script>
+  <script src="app/main.js" type="module"></script>
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+
 let target = {
   health: 100,
   name: "whatevs",
